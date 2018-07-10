@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	if(isset($_SESSION['fname'])){
+	session_destroy();
+	header("location:reg.html");
+	}
+	else
+		header("location:userlogin.php");
+?>
